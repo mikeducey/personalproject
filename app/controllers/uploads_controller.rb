@@ -1,11 +1,11 @@
-class UploadController < ApplicationController
+class UploadsController < ApplicationController
 
 	def new
     	@upload = Upload.new
   	end
 
   	def create
-    @upload = Upload.new(upload_params)
+    	@upload = Upload.new(upload_params)
 	    respond_to do |format|
 	      if @upload.save
 	        format.html { redirect_to @upload }
