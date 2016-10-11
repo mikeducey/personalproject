@@ -1,11 +1,11 @@
 <%= form_for @upload do |f| %>
 
   <div class="field">
-    <%= f.radio_button(:type, "photo", checked: true) %>
+    <%= f.radio_button(:media_type, "photo", checked: true) %>
     <%= f.label(:upload_photo, "Photo") %>
 
-    <%= f.radio_button(:type, "video") %>
-    <%= f.label(:upload_video, "Video") %>
+    <%= f.radio_button(:media_type, "video") %>
+    <%= f.label(:upload_video, "Video") %><br>
 
     <%= f.label :upload %>
     <%= f.file_field :upload %><br>

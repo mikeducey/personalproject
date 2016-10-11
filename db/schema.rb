@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161007212318) do
+ActiveRecord::Schema.define(version: 20161011144207) do
 
   create_table "uploads", force: :cascade do |t|
     t.datetime "created_at",  null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20161007212318) do
     t.string   "upload"
     t.string   "description"
     t.string   "type"
+    t.string   "media_type"
   end
 
 end
