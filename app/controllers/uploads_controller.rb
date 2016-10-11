@@ -24,7 +24,7 @@ class UploadsController < ApplicationController
 private
 
     def upload_params
-      params.require(:upload).permit(:upload, :type, :description)
+      params.require(:upload).permit(:upload, :media_type, :description)
     end
 
 end
