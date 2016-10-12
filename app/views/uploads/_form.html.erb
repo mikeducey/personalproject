@@ -1,5 +1,17 @@
 <%= form_for @upload do |f| %>
 
+  <% if @upload.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@upload.errors.count, "error") %> prohibited this media from being saved:</h2>
+
+      <ul>
+      <% @upload.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="field">
     <%= f.radio_button(:media_type, "photo", checked: true) %>
     <%= f.label(:upload_photo, "Photo") %>

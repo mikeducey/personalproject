@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rmagick'
 
 gem 'carrierwave'
-
+gem 'carrierwave-video-thumbnailer'
 
 gem 'pry'
 
