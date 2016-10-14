@@ -1,4 +1,10 @@
 <h1> More stuff will go here eventually </h1>
 
 
-<%= link_to "Upload a new file", :new_upload %>
+<%= link_to "Upload a new media file", :new_upload %>
+<%= link_to "Upload a new video", :new_video %>
+
+<%= @pictures.each do |element| %>
+	<%= element.upload %>
+	<%= element.description %>
+<% end %>

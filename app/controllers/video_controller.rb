@@ -5,7 +5,7 @@ class VideoController < ApplicationController
   	end
 
   	def create
-    	@video = Video.new(upload_params)
+    	@video = Video.new(video_params)
 	    respond_to do |format|
 	      if @video.save
 	        format.html { redirect_to @video }
