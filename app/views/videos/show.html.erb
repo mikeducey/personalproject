@@ -1,7 +1,9 @@
 <p>
   <strong>New Video Uploaded:</strong>
 
-  <%= video_tag @video.upload_url if @video.upload? %>
-
+  <%= @video.upload_url %>
+  <video controls="controls" src="/uploads/video/upload/3/IMG_4418.MOV">
+  	<!-- <source src="/uploads/video/upload/3/IMG_4418.MOV" type="video/mov"> -->
+  </video>
   <%= @video.description %>
 <p>
