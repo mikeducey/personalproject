@@ -1,0 +1,7 @@
+<p>
+  <strong>New Video Uploaded:</strong>
+
+  <%= video_tag @video.upload_url if @video.upload? %>
+
+  <%= @video.description %>
+<p>

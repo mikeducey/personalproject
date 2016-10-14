@@ -37,6 +37,7 @@ gem 'rmagick'
 gem 'carrierwave'
 gem 'carrierwave-video'
 gem 'carrierwave-video-thumbnailer'
+gem 'carrierwave-ffmpeg'
 
 gem 'pry'
 
