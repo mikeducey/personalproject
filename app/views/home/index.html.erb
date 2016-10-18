@@ -1,15 +1,15 @@
 <h1> More stuff will go here eventually </h1>
 
 
-<%= link_to "Upload a new media file", :new_upload %>
-<%= link_to "Upload a new video", :new_video %>
+<%= link_to "Upload a new photo", :new_upload %><br>
+<%= link_to "Upload a new video", :new_video %><br>
 
-<%= @pictures.each do |element| %>
-	<%= element.upload %>
-	<%= element.description %>
+<% @pictures.each do |element| %>
+	<img src="<%= element.photo %>"><br>
+	<%= element.description %><br>
 <% end %>
 
-<%= @videos.each do |element| %>
-  	<video controls="controls" src="<%=element.upload%>"></video>
-    <%= element.description %>
+<% @videos.each do |element| %>
+  	<video controls="controls" src="<%=element.upload%>"></video><br>
+    <%= element.description %><br>
 <% end %>

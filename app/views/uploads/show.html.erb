@@ -1,7 +1,7 @@
 <p>
   <strong>New Media Uploaded:</strong>
 
-  <%= image_tag @upload.upload_url(:thumb) if @upload.upload? %>
+  <%= image_tag @upload.photo_url(:thumb) if @upload.photo? %>
 
   <%= @upload.description %>
 <p>
