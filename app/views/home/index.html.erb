@@ -8,3 +8,8 @@
 	<%= element.upload %>
 	<%= element.description %>
 <% end %>
+
+<%= @videos.each do |element| %>
+  	<video controls="controls" src="<%=element.upload%>"></video>
+    <%= element.description %>
+<% end %>
